@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  background-color: #363636;
+  color: aliceblue;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a5a5a;
+}
+
+.App-Container {
+  width: 1400px;
+  margin-left: 90px;
+}
+
+/*# sourceMappingURL=index.css.map */
