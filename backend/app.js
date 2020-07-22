@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/user', users);
 app.use('/task', tasks);
 
-app.get('/', (req, res) => res.send({msg: 'Hello from server'}))
+app.get('/', (req, res) => res.send({msg: 'Hello from server'}));
 
 const PORT = process.env.port || 5000;
 

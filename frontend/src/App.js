@@ -9,7 +9,7 @@ export default class App extends React.Component {
         return (
             <Router>
                 <Route path='/' exact component={HomePage}/>
-                <Route parh='/tables' component={TablesPage}/>
+                <Route path='/tables' component={TablesPage}/>
             </Router>
         );
     }
