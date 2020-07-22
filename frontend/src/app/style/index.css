@@ -17,9 +17,24 @@ button:hover {
   background-color: #5a5a5a;
 }
 
+.List-User li span, .List-Task li span {
+  display: block;
+  align-self: center;
+  font-size: 20px;
+}
+.List-User, .List-Task {
+  overflow-y: scroll;
+  height: 400px;
+  width: 500px;
+}
 .App-Container {
   width: 1400px;
   margin-left: 90px;
+  padding-top: 100px;
+}
+.App-Flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,18 +1,16 @@
 import React from 'react';
-import UserWidgetComponent from "./app/components/UserWidget/UserWidget.component";
-import Header from "./app/components/Header/Header";
 import './app/style/index.css';
-import MainBody from "./app/components/MainBody/MainBody";
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import HomePage from "./app/components/HomePage/HomePage";
+import TablesPage from "./app/components/TablesPage/TablesPage";
 
 export default class App extends React.Component {
     render() {
         return (
-            <div>
-                <Header/>
-                <MainBody class='App-Container'>
-                    <UserWidgetComponent/>
-                </MainBody>
-            </div>
+            <Router>
+                <Route path='/' exact component={HomePage}/>
+                <Route parh='/tables' component={TablesPage}/>
+            </Router>
         );
     }
 };

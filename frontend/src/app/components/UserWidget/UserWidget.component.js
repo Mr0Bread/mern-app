@@ -24,8 +24,7 @@ export default class UserWidgetComponent extends React.Component {
             .then(
                 (result) => this.setState({
                     users: result
-                })
-            )
+                }));
     }
 
     handleSubmit() {
@@ -60,7 +59,7 @@ export default class UserWidgetComponent extends React.Component {
                 </li>))
 
             return (
-                <span className='List-User-Wrapper'>
+                <span>
                     <h2>User List:</h2>
                     <ol className='List-User'>
                         {userElements}
