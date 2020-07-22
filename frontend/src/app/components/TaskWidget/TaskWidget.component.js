@@ -49,6 +49,7 @@ export default class TaskWidgetComponent extends React.Component {
 
     _renderTaskList() {
         this.listItems = [];
+        this._fetchTasks();
         this.state.tasks.map(task => this.listItems.push(
             <li key={task._id}>
                 <span>TODO: {task.todo}</span>

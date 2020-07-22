@@ -36,8 +36,8 @@ export default class AddTaskFormComponent extends React.Component {
         };
 
         fetch('http://localhost:5000/task/add', requestOptions)
-            .then(res => res.json());
-        this.handleFormRefresh();
+            .then(res => res.json())
+            .then(() => this.handleFormRefresh());
     }
 
     render() {

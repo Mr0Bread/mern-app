@@ -30,7 +30,7 @@ class OriginCrud {
             if (err) {
                 res.send(err);
             } else {
-                res.send('Success save');
+                res.send({msg: 'Success Save'});
             }
         });
     }
