@@ -8,9 +8,7 @@ class ParagraphRoute extends OriginRoute {
 }
 
 paragraphRoute = new ParagraphRoute(ParagraphCrud);
-paragraphRoute.setCreateOneRoute();
-paragraphRoute.setReturnAllRoute();
-paragraphRoute.setUpdateOneRoute();
-paragraphRoute.setDeleteOneRoute();
+paragraphRoute.setCRUD();
+paragraphRoute.setGetOneRoute();
 
 module.exports = paragraphRoute.getRouter();

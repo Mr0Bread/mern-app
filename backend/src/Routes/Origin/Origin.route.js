@@ -31,6 +31,19 @@ class OriginRoute {
         })
     }
 
+    setCRUD() {
+        this.setCreateOneRoute();
+        this.setReturnAllRoute();
+        this.setUpdateOneRoute();
+        this.setDeleteOneRoute();
+    }
+
+    setGetOneRoute(url = '/get') {
+        this.router.post(url, (req, res) => {
+            this.objectCrud.getOne(req.body.field, req.body.value, res);
+        });
+    }
+
     getRouter() {
         return this.router
     }
