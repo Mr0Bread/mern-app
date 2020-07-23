@@ -1,15 +1,19 @@
 import React from 'react';
-import './app/style/index.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import HomePage from "./app/components/HomePage/HomePage";
-import TablesPage from "./app/components/TablesPage/TablesPage";
+
+import './app/styles/main.css';
+
+import HomePageComponent from "./app/components/HomePage/HomePage.component";
+import HeaderComponent from "./app/components/Header/Header.component";
+import FooterComponent from "./app/components/Footer/Footer.component";
 
 export default class App extends React.Component {
     render() {
         return (
             <Router>
-                <Route path='/' exact component={HomePage}/>
-                <Route path='/tables' component={TablesPage}/>
+                <HeaderComponent/>
+                <Route path='/' exact component={HomePageComponent}/>
+                <FooterComponent/>
             </Router>
         );
     }

@@ -41,7 +41,7 @@ class UserCrud {
             if (err) {
                 res.send({msg: err});
             } else {
-                res.send(`User with id ${id} was successfully deleted`);
+                res.send({msg: `User with ${id} has been successfully deleted`});
             }
         });
     }

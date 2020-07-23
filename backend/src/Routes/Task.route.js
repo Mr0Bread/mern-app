@@ -11,4 +11,8 @@ router.post('/add', (req, res) => {
     TaskCrud.addOne(req.body, res);
 })
 
+router.post('/delete', (req, res) => {
+    TaskCrud.deleteOne(req.body.id, res);
+})
+
 module.exports = router;

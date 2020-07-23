@@ -34,6 +34,16 @@ class OriginCrud {
             }
         });
     }
+
+    deleteOne(id, res) {
+        this.model.findByIdAndDelete(id, (err) => {
+            if (err) {
+                res.send({msg: err});
+            } else {
+                res.send({msg: 'Success delete'})
+            }
+        })
+    }
 }
 
 module.exports = OriginCrud;
