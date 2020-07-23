@@ -1,0 +1,9 @@
+.Footer {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 90px;
+  background-color: darkslategray;
+}
+
+/*# sourceMappingURL=Footer.styles.css.map */

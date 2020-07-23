@@ -1,15 +1,20 @@
 const express = require('express');
 const cors = require('cors');
+
+// Routers
 const users = require('./src/Routes/User.route');
-const tasks = require('./src/Routes/Task.route')
+const tasks = require('./src/Routes/Task.route');
+const paragraphs = require('./src/Routes/Paragraph.route');
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+// Initialize routers
 app.use('/user', users);
 app.use('/task', tasks);
+app.use('/paragraph', paragraphs);
 
 app.get('/', (req, res) => res.send({msg: 'Hello from server'}));
 

@@ -44,6 +44,16 @@ class OriginCrud {
             }
         })
     }
+
+    updateOne(id, params, res) {
+        this.model.findByIdAndUpdate(id, params, {useFindAndModify: false}, (err) => {
+            if (err) {
+                res.send(err);
+            } else {
+                res.send({msg: 'Successful update'});
+            }
+        })
+    }
 }
 
 module.exports = OriginCrud;
