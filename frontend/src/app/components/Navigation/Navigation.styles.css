@@ -7,6 +7,8 @@
 }
 .Navigation ul {
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=Navigation.styles.css.map */

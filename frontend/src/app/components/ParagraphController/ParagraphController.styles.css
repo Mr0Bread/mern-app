@@ -1,5 +1,10 @@
 .Paragraph-Controller {
   padding-top: 100px;
 }
+.Paragraph-Controller button {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=ParagraphController.styles.css.map */

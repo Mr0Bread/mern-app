@@ -12,7 +12,10 @@ export default class NavigationComponent extends React.Component {
                         <li>Home</li>
                     </Link>
                     <Link to='/paragraphs'>
-                        <li>Paragraphs</li>
+                        <li>Add Paragraph</li>
+                    </Link>
+                    <Link to='/addUser'>
+                        <li>Add User</li>
                     </Link>
                 </ul>
             </nav>
