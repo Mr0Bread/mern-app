@@ -1,0 +1,12 @@
+.Navigation {
+  flex-grow: 2;
+}
+.Navigation ul li {
+  color: aliceblue;
+  margin-top: 10px;
+}
+.Navigation ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=Navigation.styles.css.map */

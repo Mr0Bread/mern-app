@@ -1,6 +1,7 @@
 .Paragraph {
   padding: 10px;
-  background-color: blanchedalmond;
+  max-width: 400px;
+  min-width: 250px;
 }
 
 /*# sourceMappingURL=Paragraph.styles.css.map */

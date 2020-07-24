@@ -1,0 +1,25 @@
+.Paragraph-Form {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.Paragraph-Form-Fieldset {
+  display: flex;
+  border: none;
+  padding-bottom: 10px;
+}
+.Paragraph-Form-Fieldset label span {
+  font-size: 20px;
+}
+.Paragraph-Form-Fieldset label input {
+  font-size: 20px;
+}
+.Paragraph-Form-Fieldset textarea {
+  font-size: 20px;
+}
+.Paragraph-Form-Fieldset input[type=submit] {
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+/*# sourceMappingURL=AddParagraphForm.styles.css.map */

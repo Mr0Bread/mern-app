@@ -1,18 +1,25 @@
-import React from 'react';
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import React, {Suspense, lazy} from 'react';
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import './app/styles/main.css';
 
-import HomePageComponent from "./app/components/HomePage/HomePage.component";
 import HeaderComponent from "./app/components/Header/Header.component";
 import FooterComponent from "./app/components/Footer/Footer.component";
+
+const HomePageComponent = lazy(() => import("./app/components/HomePage/HomePage.component"));
+const ParagraphController = lazy(() => import('./app/components/ParagraphController/ParagraphController.component'));
 
 export default class App extends React.Component {
     render() {
         return (
             <Router>
                 <HeaderComponent/>
-                <Route path='/' exact component={HomePageComponent}/>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <Switch>
+                        <Route path='/' exact component={HomePageComponent}/>
+                        <Route path='/paragraphs' component={ParagraphController}/>
+                    </Switch>
+                </Suspense>
                 <FooterComponent/>
             </Router>
         );

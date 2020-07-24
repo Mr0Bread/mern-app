@@ -4,6 +4,10 @@
   z-index: 10;
   height: 90px;
   background-color: darkslategray;
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=Footer.styles.css.map */
