@@ -5,6 +5,7 @@ const cors = require('cors');
 const users = require('./src/Routes/User.route');
 const tasks = require('./src/Routes/Task.route');
 const paragraphs = require('./src/Routes/Paragraph.route');
+const meteos = require('./src/Routes/Meteo.route');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use('/user', users);
 app.use('/task', tasks);
 app.use('/paragraph', paragraphs);
+app.use('/meteo', meteos);
 
 app.get('/', (req, res) => res.send({msg: 'Hello from server'}));
 

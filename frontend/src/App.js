@@ -8,6 +8,7 @@ import FooterComponent from "./app/components/Footer/Footer.component";
 
 const HomePageComponent = lazy(() => import("./app/components/HomePage/HomePage.component"));
 const ParagraphController = lazy(() => import('./app/components/ParagraphController/ParagraphController.component'));
+const MeteoPage = lazy(() => import('./app/components/MeteoPage/MeteoPage.component'));
 
 export default class App extends React.Component {
     render() {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
                     <Switch>
                         <Route path='/' exact component={HomePageComponent}/>
                         <Route path='/paragraphs' component={ParagraphController}/>
+                        <Route path='/meteo' component={MeteoPage}/>
                     </Switch>
                 </Suspense>
                 <FooterComponent/>
